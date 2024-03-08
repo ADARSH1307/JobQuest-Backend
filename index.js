@@ -22,7 +22,7 @@ mongoose
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/api/', authRoute);
+app.use('/api', authRoute);
 app.use('/api/users', userRoute);
 app.use('/api/jobs', jobRoute);
 app.use('/api/bookmarks', bookmarkRoute);
