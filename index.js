@@ -32,6 +32,6 @@ app.use('/api/messages', messageRoute);
 var port = process.env.PORT || 4000;
 const ip = 'jobquest1.up.railway.app';
 
-app.listen(port, ip, () =>
+app.listen(port, () =>
   console.log(`Server is running on http://${ip}:${port}`)
 );
