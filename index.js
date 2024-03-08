@@ -30,8 +30,8 @@ app.use('/api/chats', chatRoute);
 app.use('/api/messages', messageRoute);
 
 var port = process.env.PORT || 4000;
-const ip = 'jobquest1.up.railway.app';
+const ip = '0.0.0.0';
 
-app.listen(port, () =>
+app.listen(port,ip, () =>
   console.log(`Server is running on http://${ip}:${port}`)
 );
