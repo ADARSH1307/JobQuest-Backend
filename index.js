@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
 
-const authRoute = require('./routes/auth');
+const authRoute = require('./routes/auth').default;
 const userRoute = require('./routes/user');
 const jobRoute = require('./routes/job');
 const bookmarkRoute = require('./routes/bookmark');
