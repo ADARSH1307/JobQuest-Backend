@@ -30,7 +30,7 @@ app.use('/api/chats', chatRoute);
 app.use('/api/messages', messageRoute);
 
 var port = process.env.PORT || 4000;
-const ip = 'https://jobquest.netlify.app';
+const ip = 'https://jobquest1.netlify.app';
 
 app.listen(port, ip, () =>
   console.log(`Server is running on http://${ip}:${port}`)
