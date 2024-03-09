@@ -36,8 +36,8 @@ const certificate = fs.readFileSync('server.cert'); // Read SSL certificate
 
 const credentials = { key: privateKey, cert: certificate }; // Create credentials object
 
-// const port = process.env.PORT || 4000;
-const port = 8080;
+const port = process.env.PORT || 4000;
+
 const ip = 'jobquest1.up.railway.app';
 
 // Create HTTPS server
