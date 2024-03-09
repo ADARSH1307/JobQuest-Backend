@@ -22,7 +22,7 @@ mongoose
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/api', authRoute);
+app.use('/api/', authRoute);
 app.use('/api/users', userRoute);
 app.use('/api/jobs', jobRoute);
 app.use('/api/bookmarks', bookmarkRoute);
@@ -30,8 +30,8 @@ app.use('/api/chats', chatRoute);
 app.use('/api/messages', messageRoute);
 
 var port = process.env.PORT || 4000;
-const ip = '0.0.0.0';
-
-app.listen(port,ip, () =>
+const ip = 'https://jobquest1.up.railway.app';
+//const ip = '192.168.114.93';
+app.listen(port, () =>
   console.log(`Server is running on http://${ip}:${port}`)
 );
