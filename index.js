@@ -42,7 +42,7 @@ const ip = 'jobquest1.up.railway.app';
 // Create HTTPS server
 const server = https.createServer(credentials, app);
 
-server.listen(port, ip, () =>
+server.listen(port, () =>
   console.log(`Server is running on https://${ip}:${port}`)
 );
 
